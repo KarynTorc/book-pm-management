@@ -18,6 +18,7 @@ import History from './components/History';
 import WeeklySummary from './components/WeeklySummary';
 import useEntries from './hooks/useEntries';
 import brand from './brand';
+import SmartGapFinder from './components/SmartGapFinder';
 
 /**
  * Root application component.
@@ -122,6 +123,7 @@ export default function App() {
           />
         )}
         {view === 3 && <WeeklySummary />}
+        {view === 4 && <SmartGapFinder />}
       </Box>
 
       <Box component="footer" sx={{ py: 2, px: 3, textAlign: 'center', color: 'text.secondary', borderTop: 1, borderColor: 'divider', fontSize: '0.85rem' }}>
